@@ -4,11 +4,13 @@
 <meta charset="utf-8">
 </head>
 <body>
-  <h1>文字がフローする場合の解消方法 [1]</h1>
+<h1>文字がフローする場合の解消方法 [1]</h1>
+<div>
 <p class="scale_w70">長体のテキスト70%</p>
 <p class="scale_w80">長体のテキスト80%</p>
 <p class="scale_w90">長体のテキスト90%</p>
-
+  </div>
+  
 <style>
 body {
   margin:4em;
@@ -16,12 +18,25 @@ body {
   font-size:2em;
   border:1px solid #ccc;
   text-align:center;
+
+  }
+body h1 {
+  font-size:1.5em;
+  color:darkslateblue;
+  }
+  
+ body div { 
+  display:flex;
+   flex-direction: column;
+  }
+  body p {
+    font-size:1em;
   }
 .scale_w70 {
   text-align:center;
   transform: scale(0.7, 1);
   padding:0;
-  margin:0 -0.8em 1.5em;
+  margin:0 0 1.5em;
   background:#ccc;
   width: 10em;
 }
@@ -30,7 +45,7 @@ body {
   text-align:center;
   transform: scale(0.8, 1);
   padding:0;
-  margin:0 -0.8em 1.5em;
+  margin:0 0 1.5em;
   background:#ccc;
   width: 10em;
 }
@@ -39,7 +54,7 @@ body {
   text-align:center;
   transform: scale(0.9, 1);
   padding:0;
-  margin:0 -0.8em 1.5em;
+  margin:0 0 1.5em;
   background:#ccc;
   width: 10em;
 }
