@@ -3,119 +3,111 @@
 <head>
 <meta charset="utf-8">
 <title>無題ドキュメント</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900,900i&display=swap" rel="stylesheet">
 <style>
 * {
-    margin: 0;
-    padding: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-	font-feature-settings: "palt";
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-feature-settings: "palt";
 }
-
 .flexbox_wrap {
   width: calc(100% - 2em);
-	max-width:800px;
-	background:url("fig_01bg.png") no-repeat right top;
-	background-size:230px 300px;
-	margin:1em;
+  max-width: 800px;
+  background: url("fig_01bg.png") no-repeat right top;
+  background-size: 230px 300px;
+  margin: 1em;
 }
 h3 {
-    line-height: 33px;
-    padding: 0;
-	font-size:26px;
+  line-height: 33px;
+  padding: 0;
+  font-size: 26px;
 }
 h3 span {
-    background-color: #FF0C0C;
-    display: inline-block;
-    padding:0 2em 1px;
-    vertical-align: middle;
-    border-radius: 50px;
-    line-height: 30px;
-    height: 30px;
-    color: #fff;
-    margin-right: .5em;
-	font-size:16px;
-	font-weight:700;
-	font-family: 'Roboto', sans-serif;
+  background-color: #FF0C0C;
+  display: inline-block;
+  padding: 0 2em 1px;
+  vertical-align: middle;
+  border-radius: 50px;
+  line-height: 30px;
+  height: 30px;
+  color: #fff;
+  margin-right: .5em;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 h3 span i {
-	font-family: 'Roboto', sans-serif;
-	font-size:24px;
-	font-style:normal;
-	font-weight:900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
 }
 .flexbox {
-    display: flex;
+  display: flex;
 }
 .flex_item_1 {
-    width: 70%;
-    margin: .3em .5em 0 0;
+  width: 70%;
+  margin: .3em .5em 0 0;
 }
 .flex_item_2 {
-    width: 30%;
-    margin: .3em 0 1 .3em;
-	height:160px;
+  width: 30%;
+  margin: .3em 0 1 .3em;
+  height: 160px;
 }
 .flex_item_2 img {
-    width: 100%;
-	display:none;
+  width: 100%;
+  display: none;
 }
+
 /***********/
-@media all and (max-width:767px){
+@media all and (max-width:767px) {
 .flexbox_wrap {
-background:none;
+  background: none;
 }
 h3 {
-    line-height: 24px;
-    padding: 0;
-	font-size:13px;
-	margin-bottom:.3em;
+  line-height: 24px;
+  padding: 0;
+  font-size: 13px;
+  margin-bottom: .3em;
 }
 h3 span {
-    line-height: 25px;
-    height: 24px;
-    margin-right: .5em;
-	font-size:14px;
+  line-height: 25px;
+  height: 24px;
+  margin-right: .5em;
+  font-size: 14px;
 }
 h3 span i {
-	font-family: 'Roboto', sans-serif;
-	font-size:18px;
-	font-style:normal;
-	font-weight:900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
 }
 .flex_item_1 p {
-    font-size:12px;
-    line-height:1.6;
-}		
+  font-size: 12px;
+  line-height: 1.6;
+}
 .flex_item_2 {
-    margin: 0 0 1 .3em;
+  margin: 0 0 1 .3em;
 }
 .flex_item_2 img {
-width: 100%;
-display:block;
-margin-top:.3em;
+  width: 100%;
+  display: block;
+  margin-top: .3em;
 }
 }
-	
-	
-	
 </style>
 </head>
 <body>
-	
 <div class="flexbox_wrap">
-<h3><span>Point <i>1</i></span>ここは「タイトル」が、はいります</h3>
-<div class="flexbox">
+ <h3><span>Point <i>1</i></span>ここは「タイトル」が、はいります</h3>
+ <div class="flexbox">
   <div class="flex_item_1">
-    <p>ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。</p>
-	  
-	  
-	  
+   <p>ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。</p>
   </div>
   <div class="flex_item_2"> <img src="img/fig_04.png" alt=""> </div>
+ </div>
 </div>
-</div>
-	
 </body>
 </html>
