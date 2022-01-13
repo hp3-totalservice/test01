@@ -18,10 +18,15 @@
   font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'メイリオ', Meiryo, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'HiraKakuProN-W3', sans-serif;
   font-feature-settings: "palt";
 }
+  section {
+    margin:2em;
+    border: 1px solid #ccc;
+    padding:1em;
+  }
 .flexbox_wrap {
   width: calc(100% - 2em);
   max-width: 950px;
-  background: url("fig_01bg.png") no-repeat right top;
+  background: url("img/fig_01bg.png") no-repeat right top;
   background-size: 230px 300px;
   margin: 1em;
 }
@@ -107,6 +112,8 @@ h3 span i {
 </style>
 </head>
 <body>
+  
+ <section>
 <div class="flexbox_wrap">
  <h3><span>Point <i>1</i></span>ここは「タイトル」が、はいります</h3>
  <div class="flexbox">
@@ -116,5 +123,18 @@ h3 span i {
   <div class="flex_item_2"> <img src="img/fig_04.png" alt=""> </div>
  </div>
 </div>
+  </section>
+  
+   <section>
+<div class="flexbox_wrap">
+ <h3><span>Point <i>2</i></span>ここは「タイトル」が、はいります</h3>
+ <div class="flexbox">
+  <div class="flex_item_1">
+   <p>ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。ここにはテキストがはいります。</p>
+  </div>
+  <div class="flex_item_2"> <img src="img/fig_04.png" alt=""> </div>
+ </div>
+</div>
+  </section>
 </body>
 </html>
