@@ -5,17 +5,41 @@
 </head>
 <body>
 
-<p class="scale_w80">長体のテキスト</p>
+<p class="scale_w70">長体のテキスト70%</p>
+<p class="scale_w80">長体のテキスト80%</p>
+<p class="scale_w90">長体のテキスト90%</p>
+
 <style>
-  body {margin:4em;font-size:2em;}
+body {margin:4em;font-size:2em;}
+.scale_w70 {
+  text-align:center;
+  transform: scale(0.8, 1);
+  padding:0;
+  margin:0 -0.8em 1.5em;
+  background:#ccc;
+  width: 10em;
+}
+  
 .scale_w80 {
   text-align:center;
   transform: scale(0.8, 1);
   padding:0;
-  margin:0 -0.8em;
+  margin:0 -0.8em 1.5em;
   background:#ccc;
-  width: 8em;
+  width: 10em;
 }
+   
+.scale_w90 {
+  text-align:center;
+  transform: scale(0.8, 1);
+  padding:0;
+  margin:0 -0.8em 1.5em;
+  background:#ccc;
+  width: 10em;
+}
+  
+
+  
 </style>
   
 </body>
