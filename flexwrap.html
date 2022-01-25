@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>flex-wrap</title>
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex_container {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.box {
+  flex: 1 1 31%;
+  height: 100px;
+  border: 1px solid #ff0000;
+  border-right: none;
+  border-bottom: none;
+  background-color: #fff;
+  text-align: center;
+}
+.box:nth-child(4), .box:nth-child(5) {
+  flex: 1 1 48%;
+  height: 150px;
+  background-color: #D4FFFF;
+  text-align: center;
+}
+.box:nth-child(9) {
+  flex: 1 1 98%;
+  height: 150px;
+  background-color: #D4FFFF;
+  text-align: center;
+}
+div.box_in {
+  width: calc(100% - 2em);
+  text-align: left;
+  margin: 1em;
+  border: 1px dotted #333;
+  height: calc(100% - 2em);
+}
+div.box_in p {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="flex_container">
+<div class="box">
+<div class="box_in">
+<p>box1</p>
+</div>
+</div>
+<div class="box">box2</div>
+<div class="box">box3</div>
+<div class="box">box4</div>
+<div class="box">box5</div>
+<div class="box">box6</div>
+<div class="box">box7</div>
+<div class="box">box8</div>
+<div class="box">box9</div>
+<div class="box">box10</div>
+</div>
+</body>
+</html>
